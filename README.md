@@ -9,6 +9,12 @@
             <li>깃 저장소: https://github.com/kossiecoder/react-basic/tree/04</li>
         </ul>
     </li>
+    <li>프로젝트실습 (02_project)<br>
+        1) 동빈나
+        <ul>
+            <li>유튜브 영상: https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw</li>
+        </ul>
+     </li>   
 </ol>
 
    

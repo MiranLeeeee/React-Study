@@ -1,0 +1,13 @@
+
+# React_basic
+[프론트엔드의 꽃, 리액트](https://spartacodingclub.kr/online/react).
+
+## Week3
+
+### 라우팅
+* SPA (Single Page Application): 서버에서 주는 HTML이 1개뿐인 어플리케이션으로 딱 한번만 정적 자원을 받아옴
+  1. 사용성 때문에 하나만 주므로 계속 화면을 바꾸는 등 상태유지가 어려움 -> 바꾸지 않은 부분도 초기화됨
+  2. 딱 한번 정적자원을 받다보니 처음에 모든 컴포넌트를 받아옴 -> 첫 로딩속도가 느려짐
+* 라우팅: 브라우저에서 주소에 따라 다른 페이지를 보여주는 것
+  1. 리액트 라우팅 패키지 설치 `yarn add react-router-dom`
+

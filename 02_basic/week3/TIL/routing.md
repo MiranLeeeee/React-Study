@@ -10,4 +10,32 @@
   2. 딱 한번 정적자원을 받다보니 처음에 모든 컴포넌트를 받아옴 -> 첫 로딩속도가 느려짐
 * 라우팅: 브라우저에서 주소에 따라 다른 페이지를 보여주는 것
   1. 리액트 라우팅 패키지 설치 `yarn add react-router-dom`
-
+* 리액트 라우팅 과정
+  1. 필요한 곳에 import (App.js)
+    ```
+    import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+    ```
+  2. 페이지 전환
+    ```
+    1) index.js
+    import {BrowserRouter} from "react-router-dom";
+    
+    ReactDOM.render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+      ...
+     2) 세부 페이지 만들기
+     3) App.js: 라우트 적용 
+        render() {
+          return(
+            <div className = "App">
+              <Route exact path="/" component={Home}/>
+              ....
+            </div>
+          );
+        }
+      -> 라우트 적용 시 path에 주소와 component를 넣음
+        만약 props가 있다면 render={(props) => (<TodoList list = {this.state.list}/>)}와 같이 추가
+    ```
+  

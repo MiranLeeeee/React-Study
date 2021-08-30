@@ -38,4 +38,34 @@
       -> 라우트 적용 시 path에 주소와 component를 넣음
         만약 props가 있다면 render={(props) => (<TodoList list = {this.state.list}/>)}와 같이 추가
     ```
-  
+  3. url 파라미터
+    - 파라미터 (/students/miran): path로 설정함
+      `path="/students/:miran"`
+      `{props.match.params.miran}`
+    - 쿼리 (/students?name=miran)
+  4. Link로 페이지 이동
+    ```
+    <div>
+      <Link to="/students/miran">미란소개</Link>
+    </div>
+    ```
+  5. history로 페이지 전환: withRouter 설정
+    ```
+    import { withRouter } from "react-router-dom";
+    export default withRouter(App);
+    ```
+    ```
+    //히스토리 사용
+    <button onClick = {
+       () => {
+                this.props.history.goBack();
+              }
+     }
+     >뒤로가기</button>
+     <button onClick = {
+        () => { 
+                this.props.history.push("/students/miran");
+              }
+     }>미란소개페이지로 이동</button>
+    ```
+     
